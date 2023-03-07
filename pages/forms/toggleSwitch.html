@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+      <div class="switch-toggle switch-3 switch-candy">
+      
+        <input id="on" name="state-d" type="radio" checked="" />
+        <label for="on" onclick="">1</label>
+      
+        <input id="off" name="state-d" type="radio"  />
+        <label for="off"onclick="">2</label>
+      
+        <input  id="na" name="state-d" type="radio" checked="checked"  />
+        <label for="na" class="disabled" onclick="">3</label>
+      
+      </div>
+</body>
+</html>
+<style>
+    .switch-toggle {
+   float: left;
+   background: white;
+   border-radius: 8px;
+   width: 50px;
+}
+.switch-toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 15%;
+}
+.switch-toggle input + label {
+  padding: 3px;
+  float:left;
+  color: black;
+  cursor: pointer;
+}
+.switch-toggle input:checked + label {
+  background: blue;
+  border-radius: 50%;
+}
+
+.numberDiv {
+  width: 50px;
+  display: flex;
+  padding-left: 10px;
+  }
+ 
+ .numberDiv p {
+   width: 30%;
+   }
+
+</style>
